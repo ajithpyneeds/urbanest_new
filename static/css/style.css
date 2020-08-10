@@ -474,7 +474,15 @@ body {
   font-size: 1.2vw;
 }
 
+.landing-img {
+  width: 83vw;
+  height: 35.05VW;
+  border-radius: 1.5vw;
+  overflow: hidden;
+}
+
 .landing-img img {
+  margin-top: 0vw;
   width: 100%;
   height: auto;
   border-radius: 1.5vw;
@@ -600,9 +608,12 @@ body {
 .lifestyle-img {
   width: 24.8vw;
   height: 33.8vw;
+  border-radius: 1.5vw;
+  overflow: hidden;
 }
 
 .lifestyle-img img {
+  margin-top: 2.5vw;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -631,9 +642,12 @@ body {
   margin-top: 4.11vw;
   width: 48.85vw;
   height: 32.8vw;
+  border-radius: 1.5vw;
+  overflow: hidden;
 }
 
 .lifestyle-img2 img {
+  margin-top: 2.5vw;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -694,11 +708,15 @@ body {
 .panel .panel-img {
   width: 24.8vw;
   height: 33.8vw;
+  overflow: hidden;
+  border-radius: 1.5vw;
 }
 
 .panel .panel-img img {
+  margin-top: -4vw;
   width: 100%;
   height: auto;
+  border-radius: 1.5vw;
 }
 
 .timeline {
@@ -940,7 +958,6 @@ body {
 }
 
 .plan {
-  overflow: hidden;
   width: 65%;
   height: 32.81vw;
   margin: auto;
@@ -948,6 +965,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 6.3vw;
+  border-radius: 1.5vw;
 }
 
 .plan img {
@@ -1155,7 +1173,15 @@ body {
   height: 38.8vw;
 }
 
-.gallery-container .g-img {
+.gallery-container .gal-cont {
+  overflow: hidden;
+  width: 67.92vw;
+  height: 38.8vw;
+  border-radius: 1.5vw;
+}
+
+.gallery-container .gal-cont .g-img {
+  margin-top: -3vw;
   width: 100%;
   height: auto;
   border-radius: 1.5vw;
@@ -1432,11 +1458,14 @@ body {
 }
 
 .soultree .soultree-descrip .soultree-img {
+  overflow: hidden;
   width: 28.2vw;
   height: 17.3vw;
+  border-radius: 1.5vw;
 }
 
 .soultree .soultree-descrip .soultree-img img {
+  margin-top: -2.5vw;
   width: 100%;
   height: auto;
   border-radius: 1.5vw;
@@ -1542,6 +1571,7 @@ body {
 
 .schedule .visit {
   color: #950f0f;
+  background-color: #ffffff;
   width: 30%;
   height: 4vw;
   width: 14.9vw;

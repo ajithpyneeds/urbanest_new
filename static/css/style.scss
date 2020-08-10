@@ -462,10 +462,18 @@ $arrow-head-thickness: $shaft-thickness;
     font-size: 1.2vw;
 }
 
-.landing-img img {
-    width: 100%;
-    height: auto;
+.landing-img {
+    width: 83vw;
+    height: 35.05VW;
     border-radius: 1.5vw;
+    overflow: hidden;
+
+    img {
+        margin-top: 0vw;
+        width: 100%;
+        height: auto;
+        border-radius: 1.5vw;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -590,9 +598,12 @@ $arrow-head-thickness: $shaft-thickness;
 .lifestyle-img {
     width: 24.8vw;
     height: 33.8vw;
+    border-radius: 1.5vw; 
+    overflow: hidden;
 }
 
 .lifestyle-img img {
+    margin-top: 2.5vw;
     object-fit: cover;
     width: 100%;
     height: 100%;   
@@ -620,9 +631,12 @@ $arrow-head-thickness: $shaft-thickness;
     margin-top: 4.11vw;
     width: 48.85vw;
     height: 32.8vw;
+    border-radius: 1.5vw;  
+    overflow: hidden;
 }
 
 .lifestyle-img2 img {
+    margin-top: 2.5vw;
     object-fit: cover;
     width: 100%;
     height: 100%;   
@@ -676,10 +690,15 @@ $arrow-head-thickness: $shaft-thickness;
         // margin-right: 12.86vw;
         width: 24.8vw;
         height: 33.8vw;
+        overflow: hidden;
+        border-radius: 1.5vw;  
+        // background: red;
 
         img{
+            margin-top: -4vw;
             width: 100%;
             height: auto;
+            border-radius: 1.5vw;  
         }
     }
 }
@@ -1027,19 +1046,24 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .plan {
-    overflow: hidden;
+    // overflow: hidden;
     width: 65%;
     height: 32.81vw;
     margin: auto;
     display: flex;
     margin-bottom: 6.3vw;
+    border-radius: 1.5vw;
+    // background: red;
+
+    img {
+        // margin-top: -35vw;
+        width: 100%;
+        height: auto;
+        border-radius: 1.5vw;
+    }
 }
 
-.plan img {
-    width: 100%;
-    height: auto;
-    border-radius: 1.5vw;
-}
+
 
 .plan .block {
     position: absolute;
@@ -1231,10 +1255,18 @@ $arrow-head-thickness: $shaft-thickness;
     width: 67.92vw;
     height: 38.8vw;
 
-    .g-img{
-        width: 100%;
-        height: auto;
+    .gal-cont {
+        overflow: hidden;
+        width: 67.92vw;
+        height: 38.8vw;
         border-radius: 1.5vw;
+
+        .g-img{
+            margin-top: -3vw;
+            width: 100%;
+            height: auto;
+            border-radius: 1.5vw;
+        }
     }
 
     .arrows {
@@ -1538,10 +1570,13 @@ $arrow-head-thickness: $shaft-thickness;
         margin-bottom: 7.55vw;
 
         .soultree-img {
+            overflow: hidden;
             width: 28.2vw;
             height: 17.3vw;
+            border-radius: 1.5vw;
 
             img {
+                margin-top: -2.5vw;
                 width: 100%;
                 height: auto;
                 border-radius: 1.5vw;
@@ -1645,6 +1680,7 @@ $arrow-head-thickness: $shaft-thickness;
 
 .schedule .visit {
     color: $dark-red;
+    background-color: $white-two;
     width: 30%;
     height: 4vw;
     width: 14.9vw;
