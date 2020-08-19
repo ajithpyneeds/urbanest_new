@@ -36,44 +36,93 @@
 </head>
 <body>
 
-    <!-- Navbar Starts -->
-    <div class="nav-bar">
+    <!-- Navbar Starts [Desktop]-->
+    <div class="nav-bar content-desktop">
         <div class="logo-container">
-            <div class="logo" data-aos="fade-right" data-aos-delay="100">
-                <a href="#"><img src="static/images/logo/logo.jpg" srcset="static/images/logo/logo@2x.jpg 2x, static/images/logo/logo@3x.jpg 3x"></a>
+            <div class="logo">
+                <div class="fillet-div">
+                    <a href="#"><img src="static/images/logo/logo.jpg" srcset="static/images/logo/logo@2x.jpg 2x, static/images/logo/logo@3x.jpg 3x"></a>
+                </div>
             </div>
         </div>
         <div class="social-icons">
             <ul>
-                <li data-aos="fade-down" data-aos-delay="120"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                <li data-aos="fade-down" data-aos-delay="140"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li data-aos="fade-down" data-aos-delay="160"><a href="#"><i class="fa fa-linkedin-in"></i></a></li>
-                <li data-aos="fade-down" data-aos-delay="180"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             </ul>
         </div>
 
-        <div class="hamburger" data-aos="fade-left" data-aos-delay="200">
-            <div class="bg-hamburger">
-                <div class="menu-toggler">
-                    <div class="bar half start"></div>
-                    <div class="bar"></div>
-                    <div class="bar half end"></div>
-                </div>
+        <div class="box" id="myHam">
+            <div class="btn11 not-active">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
 
         <nav class="top-nav">
             <ul class="nav-list">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#aboutUs" class="nav-link">About us</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#residential" class="nav-link">Residential</a></li>
+                <li><a href="#decor" class="nav-link">Decor</a></li>
+                <li><a href="#construction" class="nav-link">Construction</a></li>
+                <li><a href="#contactUs" class="nav-link">Contact us</a></li>
             </ul>
         </nav>
     </div>
-    <!-- Navbar Ends -->
+    <!-- Navbar Ends [Desktop]-->
+
+    <!-- Navbar Starts [Mobile]-->
+    <div class="nav-bar content-mobile">
+        <div class="logo-container">
+            <div class="logo">
+                <div class="fillet-div">
+                    <a href="#"><img src="static/images/logo/logo.jpg" srcset="static/images/logo/logo@2x.jpg 2x, static/images/logo/logo@3x.jpg 3x"></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path
+                  class="line middle"
+                  d="m 30,50 h 40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+        <!-- <div class="hamburger">
+            <a class="bg-hamburger btn-1">
+                <div class="menu-toggler">
+                    <div class="bar half start"></div>
+                    <div class="bar"></div>
+                    <div class="bar half end"></div>
+                </div>
+            </a>
+        </div> -->
+
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#aboutUs" class="nav-link">About us</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#residential" class="nav-link">Residential</a></li>
+                <li><a href="#decor" class="nav-link">Decor</a></li>
+                <li><a href="#construction" class="nav-link">Construction</a></li>
+                <li><a href="#contactUs" class="nav-link">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Navbar Ends [Mobile]-->
 
 
     <header class="landing-section">
@@ -371,13 +420,17 @@
                     </div>
                 </div>
             </div>
-            <div class="arrows" data-aos="fade-up" data-aos-delay="150">
-                <a class="left carousel-control" href="#Gallery-Carousel" data-slide="prev">
-                    <span><i class="fa fa-angle-left"></i></span>
-                </a>
-                <a class="right carousel-control" href="#Gallery-Carousel" data-slide="next">
-                    <span><i class="fa fa-angle-right"></i></span>
-                </a>
+            <div class="arrows">
+                <div class="left2">
+                    <a class="carousel-control" href="#Gallery-Carousel" data-slide="prev">
+                        <span><i class="fa fa-angle-left"></i></span>
+                    </a>
+                </div>
+                <div class="right2">
+                    <a class="carousel-control" href="#Gallery-Carousel" data-slide="next">
+                        <span><i class="fa fa-angle-right"></i></span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -390,15 +443,29 @@
             <h1 data-aos="fade-up" data-aos-delay="200">Gallery</h1>
         </div>
         <div class="gallery-descrip">
-            <h2 data-aos="fade-up" data-aos-delay="250">Living Room</h2>
+            <div class="gallArrows">
+                <h2 data-aos="fade-up" data-aos-delay="250">Living Room</h2>
+                <div class="arrows">
+                    <div class="left2">
+                        <a class="carousel-control" href="#Gallery-Carousel" data-slide="prev">
+                            <span><i class="fa fa-angle-left"></i></span>
+                        </a>
+                    </div>
+                    <div class="right2">
+                        <a class="carousel-control" href="#Gallery-Carousel" data-slide="next">
+                            <span><i class="fa fa-angle-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
             <div class="gallery-container" data-aos="fade-up" data-aos-delay="250">
                 <div class="carousel slide" id="Gallery-Carousel" data-ride="carousel" data-wrap="true" data-interval="false">                    
                     <div class="carousel-inner">
                         <div class="carousel-item gal-cont active" data-slide="01">
-                            <img class="g-img rellax" data-rellax-percentage="0.5" src="static/images/gallery1/gallery1.jpg" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
+                            <img class="g-img" src="static/images/gallery1/gallery1.jpg" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
                         </div>
                         <div class="carousel-item gal-cont" data-slide="02">
-                            <img class="g-img rellax" data-rellax-percentage="0.5" src="static/images/gallery1/gallery1.jpg" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
+                            <img class="g-img" src="static/images/gallery1/gallery1.jpg" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
                         </div>
                     </div>
                 </div>
@@ -410,14 +477,7 @@
                         sed diam
                     </p>
                 </div> -->
-                <div class="arrows">
-                    <a class="left carousel-control" href="#Gallery-Carousel" data-slide="prev">
-                        <span><i class="fa fa-angle-left"></i></span>
-                    </a>
-                    <a class="right carousel-control" href="#Gallery-Carousel" data-slide="next">
-                        <span><i class="fa fa-angle-right"></i></span>
-                    </a>
-                </div>            
+                           
             </div>
         </div>
     </Section>
@@ -432,15 +492,21 @@
         </h1>
         <div class="categories">
             <div class="category-img" data-aos="fade-up" data-aos-delay="200">
-                <img src="static/images/gallery1/gallery1.jpg" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
-                <h1>Gym</h1>
+                <p>Gym</p>
+                <img src="static/images/dumbell.png">
             </div>
             <div class="category-img" data-aos="fade-up" data-aos-delay="200">
-                <img src="static/images/gallery1/gallery1.jpg" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
-                <h1>Swimming Pool</h1>
+                <p>Open place for Yoga <br>
+                    and Meditation </p>
+                <img src="static/images/yoga.png" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
             </div>
             <div class="category-img" data-aos="fade-up" data-aos-delay="200">
-                <img src="static/images/children/children.jpg" srcset="static/images/children/children@2x.jpg 2x, static/images/children/children@3x.jpg 3x">
+                <p>Swimming Pool</p>
+                <img src="static/images/waterpool.png" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
+            </div>
+            <div class="category-img" data-aos="fade-up" data-aos-delay="200">
+                <p>Kids Play Area</p>
+                <img src="static/images/Ball.png">
             </div>
         </div>
         <a href="#" class="animated-arrow" data-aos="fade-up" data-aos-delay="250">
@@ -469,7 +535,7 @@
             </p>
         </div>
         <div class="location-img" data-aos="fade-up" data-aos-delay="300">
-            <img src="" alt="">
+            <img src="static/images/location.png" alt="">
         </div>
     </div>
     <!-- Location Section Ends -->
@@ -558,13 +624,15 @@
         <h1 data-aos="fade-up" data-aos-delay="200">Explore our other project</h1>
         <div class="soultree-descrip">
             <div class="soultree-img" data-aos="fade-up" data-aos-delay="250">
-                <img class="rellax" data-rellax-percentage=".5" da src="static/images/soultree/soultree.jpg" srcset="static/images/soultree/soultree@2x.jpg 2x, static/images/soultree/soultree@3x.jpg 3x">
+                <img src="static/images/soultree/soultree.jpg" srcset="static/images/soultree/soultree@2x.jpg 2x, static/images/soultree/soultree@3x.jpg 3x">
             </div>
             <div class="soultree-logo" data-aos="fade-up" data-aos-delay="250">
                 <div class="soultreeLogo">
                     <img src="static/images/soultreeLogo.png" alt="soultreeLogo">
                 </div>
-                <button class="black-button" type="submit"><span>KNOW MORE</span></button>
+                <div class="buttn">
+                    <button class="black-button" type="submit">KNOW MORE</button>
+                </div>
             </div>
         </div>
     </div>
@@ -583,20 +651,20 @@
     </Section>
     <!-- Schedule Section Ends -->
 
-    <!-- #################################################################################### -->
-    <!-- Footer Starts -->
-    <footer class="footer">
+<!-- #################################################################################### -->
+    <!-- Footer Starts [Desktop]-->
+    <section class="footer content-desktop" id="footer">
         <div class="footer-main">
             <h1 class="footer-title" data-aos="fade-up" data-aos-delay="100">New Age<br>
                 of Smart Homes
             </h1>
             <ul class="footer-nav-items">
-                <li data-aos="fade-up" data-aos-delay="200">About us</li>
-                <li data-aos="fade-up" data-aos-delay="250">Projects</li>
-                <li data-aos="fade-up" data-aos-delay="300">Residential</li>
-                <li data-aos="fade-up" data-aos-delay="350">Decor</li>
-                <li data-aos="fade-up" data-aos-delay="400">Construction</li>
-                <li data-aos="fade-up" data-aos-delay="450">Contact Us</li>
+                <li data-aos="fade-up" data-aos-delay="200"><a href="#aboutUs">About us</a></li>
+                <li data-aos="fade-up" data-aos-delay="250"><a href="#projects">Projects</a></li>
+                <li data-aos="fade-up" data-aos-delay="300"><a href="#residential">Residential</a></li>
+                <li data-aos="fade-up" data-aos-delay="350"><a href="#decor">Decor</a></li>
+                <li data-aos="fade-up" data-aos-delay="400"><a href="#construction">Construction</a></li>
+                <li data-aos="fade-up" data-aos-delay="450"><a href="#contactUs">Contact Us</a></li>
                 <li data-aos="fade-up" data-aos-delay="500" class="vertical-line"></li>
             </ul>
         </div>
@@ -606,8 +674,35 @@
             <p class="policy">Privacy Policy</p>
             <p class="disclaimer">Disclaimer</p>
         </div>
-    </footer>
-    <!-- Footer Ends -->
+    </section>
+    <!-- Footer Ends [Desktop]-->
+
+    <!-- Footer Starts [Mobile]-->
+    <section class="footer content-mobile" data-snap-point id="footer">
+        <div class="footer-main">
+            <h1 class="footer-title" data-aos="fade-up" data-aos-delay="100">New Age<br>
+                of Smart Homes
+            </h1>
+            <ul class="footer-nav-items">
+                <li data-aos="fade-up" data-aos-delay="200"><a href="#aboutUs">About us</a></li>
+                <li data-aos="fade-up" data-aos-delay="250"><a href="#projects">Projects</a></li>
+                <li data-aos="fade-up" data-aos-delay="300"><a href="#residential">Residential</a></li>
+                <li data-aos="fade-up" data-aos-delay="350"><a href="#decor">Decor</a></li>
+                <li data-aos="fade-up" data-aos-delay="400"><a href="#construction">Construction</a></li>
+                <li data-aos="fade-up" data-aos-delay="450"><a href="#contactUs">Contact Us</a></li>
+                <li data-aos="fade-up" data-aos-delay="500" class="vertical-line"></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <div class="tAndC">
+                <p class="policy">Privacy Policy</p>
+                <p class="disclaimer">Disclaimer</p>
+            </div>
+            <p class="copyright-2019">&copy Copyright | Modern Spaaces 2019. All Right Reserved</p>
+        </div>
+    </section>
+    <!-- Footer Ends [Mobile]-->
 
 
 
