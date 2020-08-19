@@ -2085,9 +2085,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2100,21 +2097,39 @@ body {
   font-size: 1.04vw;
   line-height: 1.4;
   font-weight: 600;
-  width: 60%;
+  width: 75%;
+  padding-right: 8vw;
   color: #ffffff;
 }
 
-.schedule .visit {
-  color: #950f0f;
-  background-color: #ffffff;
-  width: 30%;
+.bttn {
+  background: #ffffff;
   height: 3.54vw;
   width: 14.9vw;
+  border-radius: .2vw;
+  -webkit-transition: width 700ms;
+  transition: width 700ms;
+}
+
+.bttn button {
+  height: 3.54vw;
+  width: 14.9vw;
+  color: #950f0f;
   font-size: .9vw;
   letter-spacing: 2.5px;
   font-weight: 600;
   border-radius: .2vw;
   border: none;
+}
+
+.bttn:hover {
+  height: 3.54vw;
+  width: 0;
+}
+
+.bttn:hover button {
+  color: #ffffff;
+  font-size: 1.1vw;
 }
 
 @media only screen and (max-width: 768px) {

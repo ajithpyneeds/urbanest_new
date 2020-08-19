@@ -2129,7 +2129,6 @@ $arrow-head-thickness: $shaft-thickness;
 
 .schedule-visit {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 100%;
     width: 60%;
@@ -2140,21 +2139,38 @@ $arrow-head-thickness: $shaft-thickness;
     font-size: $p;
     line-height: 1.4;
     font-weight: $fontBold;
-    width: 60%;
+    width: 75%;
+    padding-right: 8vw;
     color: $white-two;
 }
 
-.schedule .visit {
-    color: $dark-red;
-    background-color: $white-two;
-    width: 30%;
+.bttn {
+    background: $white-two;
     height: 3.54vw;
     width: 14.9vw;
-    font-size: .9vw;
-    letter-spacing: 2.5px;
-    font-weight: $fontBold;
     border-radius: .2vw;
-    border: none;
+    transition: width 700ms;
+
+    button {
+        height: 3.54vw;
+        width: 14.9vw;
+        color: $dark-red;
+        font-size: .9vw;
+        letter-spacing: 2.5px;
+        font-weight: $fontBold;
+        border-radius: .2vw;
+        border: none;
+    }
+}
+
+.bttn:hover {
+    height: 3.54vw;
+    width: 0;
+
+    button {
+        color: $white-two;
+        font-size: 1.1vw;
+    }
 }
 
 @media only screen and(max-width:768px) {
