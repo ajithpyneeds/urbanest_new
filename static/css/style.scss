@@ -42,14 +42,14 @@ body {
 
 
 
-$gray: #808080;
+// $gray: #808080;
 
-$text-arrow-space: 16px;
-$shaft-width: 1px;
-$newshaft-width: 64px;
-$shaft-thickness: 1px;
-$arrow-head-width: .42vw;
-$arrow-head-thickness: $shaft-thickness;
+// $text-arrow-space: 16px;
+// $shaft-width: 1px;
+// $newshaft-width: 64px;
+// $shaft-thickness: 1px;
+// $arrow-head-width: .42vw;
+// $arrow-head-thickness: $shaft-thickness;
 
 
 
@@ -63,183 +63,183 @@ $arrow-head-thickness: $shaft-thickness;
 
 // The Arrow
 
-.the-arrow {
-  width: $shaft-width;
-  transition: all 0.2s;
+// .the-arrow {
+//   width: $shaft-width;
+//   transition: all 0.2s;
  
-  &.-left {
-    position: absolute;
-    top: 60%;
-    left: 0;
+//   &.-left {
+//     position: absolute;
+//     top: 60%;
+//     left: 0;
 
-    > .shaft {
-        margin-top: -1.5px;
-      width: 0;
-      background-color: $black;
+//     > .shaft {
+//         margin-top: -1.5px;
+//       width: 0;
+//       background-color: $black;
       
-      &:before,
-      &:after {
-        width: 0;
-        background-color: $black;
-      }
+//       &:before,
+//       &:after {
+//         width: 0;
+//         background-color: $black;
+//       }
 
-      &:before {
-        transform: rotate(0);
-      }
+//       &:before {
+//         transform: rotate(0);
+//       }
 
-      &:after {
-        transform: rotate(0);
-      }
-    }
-  }
+//       &:after {
+//         transform: rotate(0);
+//       }
+//     }
+//   }
   
-  &.-right {
-    top: 0;
-    left: .8vw;
+//   &.-right {
+//     top: 0;
+//     left: .8vw;
     
-    > .shaft {
-      width: $shaft-width;
-      transition-delay: 0.2s;
+//     > .shaft {
+//       width: $shaft-width;
+//       transition-delay: 0.2s;
 
-      &:before,
-      &:after { 
-        width: $arrow-head-width;
-        transition-delay: 0.3s;
-        transition: all 0.5s;
-      }
+//       &:before,
+//       &:after { 
+//         width: $arrow-head-width;
+//         transition-delay: 0.3s;
+//         transition: all 0.5s;
+//       }
       
-      &:before {
-        transform: rotate(40deg);
-      }
+//       &:before {
+//         transform: rotate(40deg);
+//       }
       
-      &:after {
-        transform: rotate(-40deg);
-      }
-    }
-  }
+//       &:after {
+//         transform: rotate(-40deg);
+//       }
+//     }
+//   }
 
-  > .shaft {
-    background-color: $black;
-    display: block;
-    height: $shaft-thickness;
-    position: relative;
-    transition: all 0.2s;
-    transition-delay: 0;
-    will-change: transform;
+//   > .shaft {
+//     background-color: $black;
+//     display: block;
+//     height: $shaft-thickness;
+//     position: relative;
+//     transition: all 0.2s;
+//     transition-delay: 0;
+//     will-change: transform;
 
-    &:before,
-    &:after {
-      background-color: $black;
-      content: '';
-      display: block;
-      height: $arrow-head-thickness;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transition: all 0.2s;
-      transition-delay: 0;
-    }
+//     &:before,
+//     &:after {
+//       background-color: $black;
+//       content: '';
+//       display: block;
+//       height: $arrow-head-thickness;
+//       position: absolute;
+//       top: 0;
+//       right: 0;
+//       transition: all 0.2s;
+//       transition-delay: 0;
+//     }
 
-    &:before {
-      transform-origin: top right;
-    }
+//     &:before {
+//       transform-origin: top right;
+//     }
 
-    &:after {
-      transform-origin: bottom right;
-    }
-  }
-}
+//     &:after {
+//       transform-origin: bottom right;
+//     }
+//   }
+// }
 
 
 
 // Animated Arrow Button
 
-.animated-arrow {
-    width: 7.8vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: $p;
-    font-weight: $fontBold;
-    letter-spacing: .25vw;
-    text-decoration: none;
-    position: relative;
-    transition: all 0.2s;
-    margin-top: 5.42vw;
+// .animated-arrow {
+//     width: 7.8vw;
+//     margin: auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: $p;
+//     font-weight: $fontBold;
+//     letter-spacing: .25vw;
+//     text-decoration: none;
+//     position: relative;
+//     transition: all 0.2s;
+//     margin-top: 5.42vw;
   
-  &:hover {
-    text-decoration: none;
+//   &:hover {
+//     text-decoration: none;
 
     
-    > .the-arrow.-left {
-      > .shaft {
-          margin-top: -1.5px;
-        width: $newshaft-width;
-        transition-delay: 0.1s;
-        // background-color: $gray;
+//     > .the-arrow.-left {
+//       > .shaft {
+//           margin-top: -1.5px;
+//         width: $newshaft-width;
+//         transition-delay: 0.1s;
+//         // background-color: $gray;
 
-        &:before,
-        &:after {
-          width: $arrow-head-width;
-          transition-delay: 0.1s;
-        //   background-color: $gray;
-        }
+//         &:before,
+//         &:after {
+//           width: $arrow-head-width;
+//           transition-delay: 0.1s;
+//         //   background-color: $gray;
+//         }
 
-        &:before {
-          transform: rotate(40deg);
-        }
+//         &:before {
+//           transform: rotate(40deg);
+//         }
 
-        &:after {
-          transform: rotate(-40deg);
-        }
-      }
-    }
+//         &:after {
+//           transform: rotate(-40deg);
+//         }
+//       }
+//     }
     
-    > .main {
-      transform: translateX($shaft-width + $text-arrow-space);
-      transform: translateX($newshaft-width + $text-arrow-space);
+//     > .main {
+//       transform: translateX($shaft-width + $text-arrow-space);
+//       transform: translateX($newshaft-width + $text-arrow-space);
       
-      > .the-arrow.-right {
-        > .shaft {
-          width: 0;
-          transform: translateX(200%);
-          transition-delay: 0;
+//       > .the-arrow.-right {
+//         > .shaft {
+//           width: 0;
+//           transform: translateX(200%);
+//           transition-delay: 0;
           
-          &:before,
-          &:after {
-            width: 0;
-            transition-delay: 0;
-            transition: all 0.1s;
-          }
+//           &:before,
+//           &:after {
+//             width: 0;
+//             transition-delay: 0;
+//             transition: all 0.1s;
+//           }
 
-          &:before {
-            transform: rotate(0);
-          }
+//           &:before {
+//             transform: rotate(0);
+//           }
 
-          &:after {
-            transform: rotate(0);
-          }
-        }
-      }
-    }
-  }
+//           &:after {
+//             transform: rotate(0);
+//           }
+//         }
+//       }
+//     }
+//   }
   
-  > .main {
-    display: flex;
-    align-items: center;
-    transition: all 0.2s;
+//   > .main {
+//     display: flex;
+//     align-items: center;
+//     transition: all 0.2s;
     
     // > .text {
     //   margin: 0 $text-arrow-space 0 0;
     //   line-height: 1;
     // }
     
-    > .the-arrow {
-      position: relative;
-    }
-  }
-}
+//     > .the-arrow {
+//       position: relative;
+//     }
+//   }
+// }
 
 // ################################################################
 // Header Section Starts
@@ -276,7 +276,7 @@ $arrow-head-thickness: $shaft-thickness;
 }
 
 .social-icons {
-    width: 17%;
+    width: 18%;
     z-index: 5;
 
     ul {
@@ -299,14 +299,13 @@ $arrow-head-thickness: $shaft-thickness;
 
 .box {
     z-index: 3000;
-    margin-left: 90vw;
+    margin-left: 93vw;
     border-radius: 3px;
     position: absolute;
     width: 2.8vw;
     height: 2.8vw;
     background: $black;
-    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
-    transition: width 700ms;
+    transition: width 500ms;
   
     .btn11 {
       position: absolute;
@@ -792,6 +791,11 @@ $arrow-head-thickness: $shaft-thickness;
     font-size: 1.2vw;
 }
 
+.landing-list a:hover {
+    text-decoration: none;
+    color: $dark-red;
+}
+
 .landing-img {
     width: 83vw;
     height: 35.05VW;
@@ -1037,6 +1041,8 @@ $arrow-head-thickness: $shaft-thickness;
 // Timeline Section Starts
     .timeline {
         height: 100vh;
+        width: 100%;
+        overflow-x: scroll;
         background-color: #f8f8f8;
         color: $black;
         font-family: Titillium Web, sans-serif;
@@ -1063,6 +1069,7 @@ $arrow-head-thickness: $shaft-thickness;
         margin-left: 12.5vw;
         margin-top: 3%;
         height: 23vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -1078,7 +1085,7 @@ $arrow-head-thickness: $shaft-thickness;
         }
 
         .fillet-img:nth-child(1) {
-            margin-left: 8.5vw;
+            margin-left: 9.5vw;
         }
 
         .fillet-img:nth-child(2) {
@@ -1145,7 +1152,7 @@ $arrow-head-thickness: $shaft-thickness;
         }
 
         li:nth-child(2) {
-            margin-left: 9vw;
+            margin-left: 10vw;
 
             h6 {
                 margin-left: -2.5vw;
@@ -1200,7 +1207,7 @@ $arrow-head-thickness: $shaft-thickness;
         }
 
         li:nth-child(8) {
-            margin-left: 7vw;
+            margin-left: 8.5vw;
             margin-top: .28vw;
 
             h3 {
@@ -1209,7 +1216,7 @@ $arrow-head-thickness: $shaft-thickness;
         }
 
         li:nth-child(9) {
-            margin-left: 7.5vw;
+            margin-left: 9vw;
             margin-top: -2.5vw;
 
             h6 {
@@ -1234,7 +1241,7 @@ $arrow-head-thickness: $shaft-thickness;
         }
 
         .fillet-img:nth-child(2) {
-            margin-left: 36vw;
+            margin-left: 40vw;
         }
 
         img {
@@ -1446,31 +1453,103 @@ $arrow-head-thickness: $shaft-thickness;
     background-color: $white-five;
 }
 
-.click-btn-1:nth-child(3) {
+.active, .click-btn-1:hover {
     background-color: $dark-red;
     color: $white-two;
-    border: none;
+    // border: none;
 }
 
-.facing select {
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+  }
+  
+  /* For IE10 */
+  select::-ms-expand {
+    display: none;
+  }
+  
+
+
+.box11 {
     margin-top: -.5vw;
-    padding: .5vw 3vw .5vw 4vw;
+    position: absolute;
+  }
+  
+  .box11 select {
+      text-align: center;
+    background-color: $white-two;
+    color: $black;
+    width: 10.5vw;
+    height: 3vw;
+    border-radius: 3px;
+    border: 1px solid;
     font-size: $p;
     font-weight: $fontThin;
-    border: solid 1px #707070;
-    border-radius: 1px;
-    background-color: $white-two;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .box11::before {
+    content: "\f107";
+    background: $white-two;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    width: 18%;
+    height: 80%;
+    text-align: center;
+    font-weight: $fontThin;
+    font-size: 1.5vw;
+    line-height: 45px;
+    pointer-events: none;
+    color: black;
+  }
+  
+//   .box11:hover::before {
+//     color: rgba(255, 255, 255, 0.6);
+//     background-color: rgba(255, 255, 255, 0.2);
+//   }
+  
+  select option {
+    width: 70%;
+    margin: auto;
 }
 
-.building-blocks select {
-    margin-top: -.5vw;
-    padding: .5vw 3.7vw .5vw 4.7vw;
-    font-size: $p;
-    font-weight: 300;
-    border: solid 1px #707070;
-    border-radius: 1px;
-    background-color: $white-two;
+.building-blocks p {
+    margin-top: 5vw;
 }
+
+
+// .facing select {
+//     margin-top: -.5vw;
+//     text-align: center;
+//     width: 10.5vw;
+//     height: 3vw;
+//     font-size: $p;
+//     font-weight: $fontThin;
+//     border: solid 1px #707070;
+//     border-radius: 3px;
+//     background-color: $white-two;
+// }
+
+// .building-blocks select {
+//     margin-top: -.5vw;
+//     text-align: center;
+//     width: 10.5vw;
+//     height: 3vw;
+//     font-size: $p;
+//     font-weight: 300;
+//     border: solid 1px #707070;
+//     border-radius: 3px;
+//     background-color: $white-two;
+// }
 
 .floor-plan-img {
     width: 38.02vw;
@@ -1527,7 +1606,7 @@ $arrow-head-thickness: $shaft-thickness;
             height: 3.54vw;
             width: 0;
             border-radius: .25vw 0 0 .25vw;
-            transition: width 700ms;
+            transition: width 500ms;
 
             a {
                 height: 3.54vw;
@@ -1559,7 +1638,7 @@ $arrow-head-thickness: $shaft-thickness;
             height: 3.54vw;
             width: 0;
             border-radius: 0 .25vw .25vw 0;
-            transition: width 700ms;
+            transition: width 500ms;
           
             a {
                 height: 3.54vw;
@@ -1627,7 +1706,7 @@ $arrow-head-thickness: $shaft-thickness;
                 height: 3.54vw;
                 width: 0;
                 border-radius: .25vw 0 0 .25vw;
-                transition: width 700ms;
+                transition: width 500ms;
 
                 a {
                     height: 3.54vw;
@@ -1659,7 +1738,7 @@ $arrow-head-thickness: $shaft-thickness;
                 height: 3.54vw;
                 width: 0;
                 border-radius: 0 .25vw .25vw 0;
-                transition: width 700ms;
+                transition: width 500ms;
               
                 a {
                     height: 3.54vw;
@@ -1880,26 +1959,56 @@ $arrow-head-thickness: $shaft-thickness;
         }
     }
 
-    .btn1 {
-        display: flex;
-        justify-content: center;
-        border: none;
-        color: $dark-red;
-
-        p {
-            font-size: $p;
-            font-weight: $fontBold;
-            letter-spacing: .25vw;
+    .circle-center {
+        width: 12%;
+        text-align: center;
+        margin: auto;
+    
+        .circle-slide {
+            margin-top: 5.42vw;
+            margin-bottom: 2vw;
             color: $dark-red;
+            height: 3vw;
+            width: 3vw;
+            border-radius: 2vw;
+            background: $black;
+            transition: width 500ms;
+    
+            a {
+                font-size: 0.9vw;
+                font-weight: $fontBold;
+                letter-spacing: .25vw;
+                color: $dark-red;
+                height: 3vw;
+                width: 12vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+    
+            a::after {
+                content: '\f105';
+                font-family: fontAwesome;
+                font-size: .9vw;
+                font-weight: $fontThin;
+                padding-left: .6vw;
+                color: $dark-red;
+            }
         }
-
-        p::after {
-            content: '\f105';
-            font-family: fontAwesome;
-            font-size: 1vw;
-            font-weight: $fontThin;
-            padding-left: .6vw;
-            color: $dark-red;
+    
+        .circle-slide:hover {
+            height: 3vw;
+            width: 12vw;
+    
+            a {
+                color: $white-two;
+                text-decoration: none;
+            }
+    
+            a::after {
+                color: $white-two;
+            }
         }
     }
 }
@@ -2087,7 +2196,7 @@ $arrow-head-thickness: $shaft-thickness;
                 width: 12.4vw;
                 background-color: $black;
                 border-radius: 0.26vw;
-                transition: width 700ms;
+                transition: width 500ms;
                 
                 .black-button {
                     border: none;
@@ -2110,7 +2219,15 @@ $arrow-head-thickness: $shaft-thickness;
 
                 .black-button {
                     color: $black;
-                    transform: scale(1.18);
+                }
+
+                .black-button::after {
+                    content: '\f105';
+                    font-family: fontAwesome;
+                    font-size: .9vw;
+                    font-weight: $fontThin;
+                    padding-left: .6vw;
+                    color: $black;
                 }
             }
         }
@@ -2149,7 +2266,7 @@ $arrow-head-thickness: $shaft-thickness;
     height: 3.54vw;
     width: 14.9vw;
     border-radius: .2vw;
-    transition: width 700ms;
+    transition: width 500ms;
 
     button {
         height: 3.54vw;
@@ -2169,7 +2286,15 @@ $arrow-head-thickness: $shaft-thickness;
 
     button {
         color: $white-two;
-        font-size: 1.1vw;
+    }
+
+    button::after {
+        content: '\f105';
+        font-family: fontAwesome;
+        font-size: .9vw;
+        font-weight: $fontThin;
+        padding-left: .6vw;
+        color: $white-two;
     }
 }
 
@@ -2239,6 +2364,11 @@ $arrow-head-thickness: $shaft-thickness;
 
     a {
         color: $white-two;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $dark-red;
     }
 }
 

@@ -165,7 +165,7 @@
                 <p data-aos="fade-up" data-aos-delay="300">
                     Imagine a home which works on your fingertips. Imagine getting up, opening the windows and letting the glorious sunlight flood the house, while the magnificent sense of lush green surroundings invites you to think about all the possibilities the new day has to offer, just a few minutes away from the main points of interest of the city.</p>
 
-                <p data-aos="fade-up" data-aos-delay="330">
+                <p data-aos="fade-up" data-aos-delay="300">
                     Urbanest at Sarjapur Road was designed with well-rounded lifestyles top of mind. Expand your social and personal sides with our incredible array of community and apartment amenities. Sit back and relax with 1,2 or 3 bedrooms which welcome you home with beautiful finishes, crisp colour palettes, large windows, smart technology and so much more. Urbanest by Modern Spaaces perfectly reflects the neighbourhood and our residents. Mature and modern. Calm and collected. Inspired by you and everything around it.
                 </p>
             </div>
@@ -216,52 +216,52 @@
         </div>
         <div class="timeline-details">
 
-            <div class="before-imgs" data-aos="fade-up" data-aos-delay="250">
-                <div class="fillet-img">
+            <div class="before-imgs">
+                <div class="fillet-img" data-aos="fade" data-aos-delay="400">
                     <img src="static/images/timeline1/timeline1.jpg" srcset="static/images/timeline1/timeline1@2x.jpg 2x, static/images/timeline1/timeline1@3x.jpg 3x">
                 </div>
 
-                <div class="fillet-img">
+                <div class="fillet-img" data-aos="fade" data-aos-delay="1400">
                     <img src="static/images/timeline3/timeline3.jpg" srcset="static/images/timeline3/timeline3@2x.jpg 2x, static/images/timeline3/timeline3@3x.jpg 3x">
                 </div>
             </div>
 
-            <div class="markers" data-aos="fade-up" data-aos-delay="300">
-                <li class="hr-solid"></li>
+            <div class="markers">
+                <li class="hr-solid" data-aos="fade" data-aos-delay="100"></li>
                 <div class="v-lines">
-                    <li>
+                    <li data-aos="fade" data-aos-delay="200">
                         <h3>2017</h3>
                         <p class="dot"></p>
                     </li>
-                    <li>
+                    <li data-aos="fade" data-aos-delay="400">
                         <p class="vl"></p>
                         <h6>Acquisition</h6>
                     </li>
-                    <li>
+                    <li data-aos="fade" data-aos-delay="600">
                         <p class="dot"></p>
                         <h3>2018</h3>
                     </li>
-                    <li>
+                    <li data-aos="fade" data-aos-delay="800">
                         <h6>Concept</h6>
                         <p class="vl"></p>
                     </li>
-                    <li>
+                    <li data-aos="fade" data-aos-delay="1000">
                         <h3>2019</h3>
                         <p class="dot"></p>
                     </li>
-                    <li>
+                    <li data-aos="fade" data-aos-delay="1200">
                         <p class="vl"></p>
                         <h6>Design</h6>
                     </li>
-                    <li>
+                    <li data-aos="fade" data-aos-delay="1400">
                         <h6>Concept</h6>
                         <p class="vl"></p>
                     </li>
-                    <li>
+                    <li data-aos="fade" data-aos-delay="1600">
                         <p class="dot"></p>
                         <h3>2020</h3>
                     </li>
-                    <li>
+                    <li data-aos="fade" data-aos-delay="1800">
                         <h6>Construction</h6>
                         <p class="vl"></p>
                     </li>
@@ -269,12 +269,12 @@
                 </div>
             </div>
 
-            <div class="after-imgs" data-aos="fade-up" data-aos-delay="350">
-                <div class="fillet-img">
+            <div class="after-imgs">
+                <div class="fillet-img" data-aos="fade" data-aos-delay="900">
                     <img src="static/images/timeline2/timeline2.jpg" srcset="static/images/timeline2/timeline2@2x.jpg 2x, static/images/timeline2/timeline2@3x.jpg 3x">
                 </div>
 
-                <div class="fillet-img">
+                <div class="fillet-img" data-aos="fade" data-aos-delay="1800">
                     <img src="static/images/timeline4/timeline4.jpg" srcset="static/images/timeline4/timeline4@2x.jpg 2x, static/images/timeline4/timeline4@3x.jpg 3x">
                 </div>
             </div>
@@ -372,28 +372,33 @@
             <div class="selection" data-aos="fade-up" data-aos-delay="200">
                 <div class="type-selection">
                     <p>Type</p>
-                    <div class="click-btn">
+                    <div class="click-btn" id="click-btn">
                         <button class="click-btn-1">1</button>
                         <button class="click-btn-1">2</button>
-                        <button class="click-btn-1">3</button>
+                        <button class="click-btn-1 active">3</button>
                     </div>
                 </div>
+
                 <div class="facing">
                     <p>Facing</p>
-                    <select name="" id="faces">
-                        <option value="east">East</option>
-                        <option value="west">West</option>
-                        <option value="north">North</option>
-                        <option value="south">South</option>
-                    </select>
+                    <div class="box11">
+                        <select>
+                            <option>East</option>
+                            <option>West</option>
+                            <option>North</option>
+                            <option>South</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="building-blocks">
                     <p>Block</p>
-                    <select name="" id="blocksss">
-                        <option value="b">B</option>
-                        <option value="c">C</option>
-                        <option value="d">D</option>
-                    </select>
+                    <div class="box11">
+                        <select>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="floor-plan-img" data-aos="fade-up" data-aos-delay="200">
@@ -423,7 +428,7 @@
                     </div>
                 </div>
             </div>
-            <div class="arrows">
+            <div class="arrows" data-aos="fade-up" data-aos-delay="200">
                 <div class="left2">
                     <a class="carousel-control" href="#Gallery-Carousel" data-slide="prev">
                         <span><i class="fa fa-angle-left"></i></span>
@@ -447,7 +452,7 @@
         </div>
         <div class="gallery-descrip">
             <div class="gallArrows">
-                <h2 data-aos="fade-up" data-aos-delay="250">Living Room</h2>
+                <h2>Living Room</h2>
                 <div class="arrows">
                     <div class="left2">
                         <a class="carousel-control" href="#Gallery-Carousel" data-slide="prev">
@@ -461,7 +466,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="gallery-container" data-aos="fade-up" data-aos-delay="250">
+            <div class="gallery-container" data-aos="fade" data-aos-delay="250">
                 <div class="carousel slide" id="Gallery-Carousel" data-ride="carousel" data-wrap="true" data-interval="false">                    
                     <div class="carousel-inner">
                         <div class="carousel-item gal-cont active" data-slide="01">
@@ -494,31 +499,36 @@
             to buy your dream home
         </h1>
         <div class="categories">
-            <div class="category-img" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-img" data-aos="fade" data-aos-delay="200">
                 <p>Gym</p>
                 <img src="static/images/dumbell.png">
             </div>
-            <div class="category-img" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-img" data-aos="fade" data-aos-delay="800">
                 <p>Open place for Yoga <br>
                     and Meditation </p>
                 <img src="static/images/yoga.png" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
             </div>
-            <div class="category-img" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-img" data-aos="fade" data-aos-delay="200">
                 <p>Swimming Pool</p>
                 <img src="static/images/waterpool.png" srcset="static/images/gallery1/gallery1@2x.jpg 2x, static/images/gallery1/gallery1@3x.jpg 3x">
             </div>
-            <div class="category-img" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-img" data-aos="fade" data-aos-delay="800">
                 <p>Kids Play Area</p>
                 <img src="static/images/Ball.png">
             </div>
         </div>
-        <a href="#" class="animated-arrow" data-aos="fade-up" data-aos-delay="250">
+        <!-- <a href="#" class="animated-arrow" data-aos="fade-up" data-aos-delay="250">
             <span class="the-arrow -left"><span class="shaft"></span></span>
             <span class="main">
                 <span class="text btn1">LOAD MORE</span>
                 <span class="the-arrow -right"><span class="shaft"></span></span>
             </span>
-        </a>
+        </a> -->
+        <div class="circle-center">
+            <div class="circle-slide">
+                <a href="#" class="slide">LOAD MORE</a>
+            </div>
+        </div>
     </section>
     <!-- Facilities Section Ends -->
 
@@ -644,13 +654,13 @@
     <!-- #################################################################################### -->
     <!-- Schedule Section Starts -->
     <Section class="schedule">
-        <div class="schedule-visit">
-            <p data-aos="fade-up" data-aos-delay="200">
+        <div class="schedule-visit" data-aos="fade" data-aos-delay="200">
+            <p>
                 We’re here to answer queries, and to guide and provide you with the information
                 you need in choosing the perfect home.
             </p>
             <div class="bttn">
-                <button data-aos="fade-up" data-aos-delay="200">SCHEDULE A VISIT</button>
+                <button>SCHEDULE A VISIT</button>
             </div>
         </div>
     </Section>
@@ -726,6 +736,41 @@
 
     </script>
 
+    <!-- GSAP Landing Section Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.timeline(".welcome h1", {
+            ScrollTrigger: ".welcome h1",
+            x: 150,
+            duration: 1
+        });
+    </script>
+
+    <script>
+        TweenMax.from('.logo', 1, {
+        delay: 0.2,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom('.social-icons ul li', 1, {
+        delay: 0.3,
+        opacity: 0,
+        x: -10,
+        ease: Expo.easeInOut
+        }, 0.08)
+
+        TweenMax.from('.box', 1, {
+        x: -20,
+        delay: 0.4,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
+    </script>
+
     <!-- Bootstrap4 CDN Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -755,6 +800,20 @@
         $(function() {
             $('img.lazy').lazyload();
         });
+    </script>
+
+    <!-- Choose your unit type selection -->
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("click-btn");
+        var btns = header.getElementsByClassName("click-btn-1");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+        }
     </script>
 
 </body>

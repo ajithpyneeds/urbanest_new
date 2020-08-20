@@ -7,8 +7,8 @@ var btn = $('.btn11');
         });
 
 $(document).ready(function() {
-    $('.box').on('click', function() {
-        $(this).toggleClass('active');
+    $('.btn11').on('click', function() {
+        $('.btn11').toggleClass('action');
         $('.top-nav').toggleClass('open');
     });
 
