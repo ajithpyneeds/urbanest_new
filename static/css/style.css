@@ -60,7 +60,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.04vw;
-  margin-top: 1.2vw;
+  margin-top: .5vw;
   float: right;
 }
 
@@ -681,9 +681,10 @@ body {
 }
 
 .landing-img img {
-  margin-top: 0vw;
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.5vw;
 }
 
@@ -1668,64 +1669,40 @@ select option {
   margin: 1.5vw 0 0 8.96vw;
 }
 
-.facilities .circle-center {
-  width: 12%;
-  text-align: center;
-  margin: auto;
-}
-
-.facilities .circle-center .circle-slide {
+.facilities .btn1 {
   margin-top: 5.42vw;
-  margin-bottom: 2vw;
-  color: #950f0f;
-  height: 3vw;
-  width: 3vw;
-  border-radius: 2vw;
-  background: #000000;
-  -webkit-transition: width 500ms;
-  transition: width 500ms;
-}
-
-.facilities .circle-center .circle-slide a {
-  font-size: 0.9vw;
-  font-weight: 600;
-  letter-spacing: .25vw;
-  color: #950f0f;
-  height: 3vw;
-  width: 12vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border: none;
   text-decoration: none;
 }
 
-.facilities .circle-center .circle-slide a::after {
+.facilities .btn1 p {
+  font-size: .9vw;
+  font-weight: 600;
+  letter-spacing: .25vw;
+  background: -webkit-gradient(linear, left top, right top, from(#d49e1f), to(#534215));
+  background: linear-gradient(to right, #d49e1f, #534215);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.facilities .btn1 p::after {
   content: '\f105';
   font-family: fontAwesome;
   font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
-  color: #950f0f;
 }
 
-.facilities .circle-center .circle-slide:hover {
-  height: 3vw;
-  width: 12vw;
-}
-
-.facilities .circle-center .circle-slide:hover a {
-  color: #ffffff;
+.facilities .btn1 p:hover,
+.facilities .btn1 p::after:hover {
   text-decoration: none;
-}
-
-.facilities .circle-center .circle-slide:hover a::after {
-  color: #ffffff;
+  color: #534215;
 }
 
 .location {
@@ -2070,7 +2047,6 @@ select option {
   height: 100vh;
   background-color: #000000;
   font-family: Titillium Web, sans-serif;
-  scroll-snap-align: center;
 }
 
 .footer-main {
@@ -2086,13 +2062,14 @@ select option {
       -ms-flex: 1;
           flex: 1;
   margin-left: 15vw;
-  margin-top: 16vw;
+  font-weight: 300;
+  margin-top: 14vw;
   font-size: 3.75vw;
   line-height: 1.11;
 }
 
 .footer-nav-items {
-  margin-top: 16vw;
+  margin-top: 14vw;
   margin-left: 10vw;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2107,7 +2084,7 @@ select option {
 
 .footer-nav-items a:hover {
   text-decoration: none;
-  color: #950f0f;
+  color: #d49e1f;
 }
 
 .vertical-line {

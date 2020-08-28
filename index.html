@@ -152,6 +152,20 @@
     </header>
     <!-- Header Section Ends -->
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        $(".landing-img img").css({
+            width: (100 + scroll/90) + "%",
+        })
+        })
+    </script>
+
     <!-- #################################################################################### -->
     <!-- Lifestyle Section Starts -->
     <section class="lifestyle">
@@ -517,18 +531,7 @@
                 <img src="static/images/Ball.png">
             </div>
         </div>
-        <!-- <a href="#" class="animated-arrow" data-aos="fade-up" data-aos-delay="250">
-            <span class="the-arrow -left"><span class="shaft"></span></span>
-            <span class="main">
-                <span class="text btn1">LOAD MORE</span>
-                <span class="the-arrow -right"><span class="shaft"></span></span>
-            </span>
-        </a> -->
-        <div class="circle-center">
-            <div class="circle-slide">
-                <a href="#" class="slide">LOAD MORE</a>
-            </div>
-        </div>
+        <a href="#" class="btn1"><p>READ MORE</p></a>
     </section>
     <!-- Facilities Section Ends -->
 
